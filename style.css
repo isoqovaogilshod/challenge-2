@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #f3eae3;
+}
+
+.container {
+  display: flex;
+  /* margin: 0 auto; */
+  max-width: 385px;
+  background-color: #ffffff;
+  border-radius: 10px 10px 0 0;
+  max-height: 600px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.desktop-img {
+  display: none;
+}
+.img {
+  max-width: 100%;
+}
+.mobile-img {
+  max-width: 24rem;
+  max-height: 20rem;
+  border-radius: 10px 10px 0 0;
+}
+
+.text {
+  padding: 24px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135.023%;
+  letter-spacing: 5.16px;
+}
+
+h1 {
+  font-family: Fraunces;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  margin-top: 1.1rem;
+}
+
+p {
+  color: #8d8e93;
+  margin-top: 16px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 161%;
+  max-width: 296px;
+}
+
+.nums {
+  display: flex;
+  align-items: center;
+  column-gap: 19px;
+  margin-top: 24px;
+}
+.nums h3 {
+  color: #3d8168;
+  font-family: Fraunces;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.nums span {
+  color: #8d8e93;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 161%;
+  letter-spacing: -0.42px;
+  text-decoration: line-through;
+}
+
+button {
+  border-radius: 7px;
+  width: 294px;
+  margin-top: 20px;
+  margin-bottom: 23px;
+  background: #3d8168;
+  padding: 12px 77px 13px 78px;
+  border: none;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 161%;
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    max-width: 700px;
+    max-height: 470px;
+    border-radius: 10px;
+  }
+  .desktop-img {
+    display: inline;
+    max-width: 300px;
+    height: 472px;
+    border-radius: 10px 0px 0px 10px;
+  }
+  .mobile-img {
+    display: none;
+  }
+  .text {
+    padding-top: 32px;
+    margin-bottom: 0px;
+  }
+
+  h1 {
+    margin-top: 19px;
+    max-width: 199px;
+  }
+  p {
+    margin-top: 24px;
+    max-width: 227px;
+  }
+  button {
+    margin-top: 50px;
+    max-width: 236px;
+    padding: 16px;
+  }
+}
